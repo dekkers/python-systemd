@@ -45,7 +45,7 @@ PyObject* absolute_timeout(uint64_t t) {
         }
 }
 
-int set_error(int r, const char* path, const char* invalid_message) {
+int set_error(int r, char* path, const char* invalid_message) {
         if (r >= 0)
                 return r;
         if (r == -EINVAL && invalid_message)

@@ -27,7 +27,7 @@
 
 void cleanup_Py_DECREFp(PyObject **p);
 PyObject* absolute_timeout(uint64_t t);
-int set_error(int r, const char* path, const char* invalid_message);
+int set_error(int r, char* path, const char* invalid_message);
 
 #if PY_MAJOR_VERSION >=3 && PY_MINOR_VERSION >= 1
 int Unicode_FSConverter(PyObject* obj, void *_result);
